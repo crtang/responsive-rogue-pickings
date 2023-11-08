@@ -1,0 +1,217 @@
+/******** GLOBAL STYLES ********/
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: .9em;
+	color: #000000;
+}
+
+/* The width property has been changed to max-width */
+.content-wrapper {
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 1.875em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: .75em;
+}
+
+p {
+	line-height: 2.25em;
+}
+
+/******** HEADER STYLES ********/
+/* The widths are in a percentage! */
+header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+header h1 {
+	width: 100%;
+	margin: 0;
+	border-bottom: 3px solid #45610e;
+	padding: 38px 0 20px;
+}
+
+header h1 span {
+	color: #45610e;
+}
+
+header nav {
+	padding: 20px 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 0;
+	font-size: .875em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #45610E;
+}
+
+/********  MAIN STYLES ********/
+/******** TOP SECTION ********/
+/* The widths are in a percentage! */
+.main-image img {
+	width: 100%;
+	border-top: 3px solid #77A466;
+	border-bottom: 3px solid #77a466;
+}
+
+
+.main-title h2 {
+	color: #45610E;
+	padding: 5px 0;
+}
+
+/******** BOTTOM SECTION ********/
+.top-section,
+.bottom-section {
+	display: flex;
+	justify-content: center;
+}
+
+.bottom-section .content-wrapper {
+	border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.section-one {
+	width: 100%;
+}
+
+.section-two {
+	width: 100%;
+	border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE;
+}
+
+.section-three {
+	width: 100%;
+}
+
+.bottom-section h3 {
+	margin: 30px 0;
+}
+
+.menu-list {
+	padding-left: 0;
+	list-style: none;
+}
+
+.menu-list li {
+	color: #45610E;
+	font-size: 1em;
+	line-height: 2.25em;
+}
+
+/******** FOOTER STYLES ********/
+/* The widths are in a percentage! */
+footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 8px;
+	text-align: center;
+}
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #45610E;
+	font-size: .875em;
+}
+
+/******** MEDIA QUERIES *******/
+/* Tablet */
+@media screen and (min-width: 768px) {
+	.section-one,
+	.section-three {
+		width: 30%;
+		padding: 0 20px;
+	}
+
+	.section-two {
+		width: 40%;
+		border-top: 0;
+		border-left: 5px solid #eee;
+		border-bottom: 0;
+		border-right: 5px solid #eee;
+		padding: 0 30px;
+	}
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+	.content-wrapper {
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	header {
+		width: 100%;
+		text-align: left;
+	}
+
+	header h1 {
+		width: 80%;
+		border-bottom: 0;
+	}
+
+	header nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 38px 0 20px;
+	}
+
+	header nav ul li {
+		width: auto;
+		padding: 10px;
+	}
+}
